@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
-@Document(collation = "turnos")
+@Document(collection = "turnos")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -24,5 +24,5 @@ public class Turno {
 
     private Paciente paciente;
 
-    private LocalDateTime horarioTurno;
+    private LocalDateTime fecha;
 }

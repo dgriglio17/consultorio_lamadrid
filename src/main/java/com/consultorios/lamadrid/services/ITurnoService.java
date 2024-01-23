@@ -2,11 +2,13 @@ package com.consultorios.lamadrid.services;
 
 import com.consultorios.lamadrid.entities.Turno;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
 
 public interface ITurnoService {
 
-    List<Turno> getTurnosByDatesBetween(LocalDateTime start, LocalDateTime end);
+    Turno createTurno(Turno turno);
+
+    List<Turno> getTurnosByDatesBetween(String start, String end);
 
 }
